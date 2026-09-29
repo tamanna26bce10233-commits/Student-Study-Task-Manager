@@ -1,57 +1,75 @@
 # Student Study & Task Manager
 
-## Description
-Student Study & Task Manager is a simple Python-based command-line application designed to help students organize and track their study tasks. It allows users to add tasks, view tasks, search for tasks, mark tasks as completed, and check their overall study progress.
+## 1. Project Overview
 
-## Problem Statement
+Student Study & Task Manager is a Python-based command-line application designed to help college students organize and track their study-related tasks.
+
+The application allows users to:
+
+- Add study tasks
+- View all study tasks
+- Search for a task
+- Mark tasks as completed
+- View overall study progress
+- See whether tasks are pending or completed
+
+The project is developed using Python and demonstrates concepts such as classes, objects, functions, lists, loops, conditional statements, input validation, modular programming, and unit testing.
+
+---
+
+## 2. Problem Statement
+
 College students often have multiple study tasks, assignments, and revision activities to complete. Managing these tasks manually can make it difficult to remember pending work and track study progress.
 
-The Student Study & Task Manager provides a simple way for students to manage their study-related tasks in one place. Users can add tasks, view their tasks, search for a particular task, mark tasks as completed, and check their overall study progress.
+This project provides a simple command-line system where students can organize their study tasks and monitor their completion progress.
 
-## Scope
-The project provides a simple command-line system for managing study tasks and tracking completion progress. It focuses on basic task organization using Python.
+---
 
-## Target Users
-- College students
-- Students preparing for examinations
-- Students who want to organize their study tasks
+## 3. Features
 
-## Features
 1. Add a study task
 2. View all study tasks
-3. Search for a task
+3. Search for a task using a keyword
 4. Mark a task as completed
-5. View study progress
-6. Display completed and pending task status
+5. View total and completed tasks
+6. Calculate study progress percentage
+7. Validate task titles
+8. Handle invalid menu choices
+9. Run automated unit tests
 
-## Technologies Used
+---
+
+## 4. Technologies Used
+
 - Python 3
 - Python Classes and Objects
-- Lists
 - Functions
+- Lists
 - Loops
 - Conditional Statements
+- Input Validation
+- Python `unittest`
 - Command-line interface
 
-## Project Structure
+No external Python libraries are required.
+
+---
+
+## 5. Project Structure
+
 ```text
-Student Study & Task Manager
-│
-├── modules
-│   ├── task.py
-│   └── storage.py
+Student-Study-Task-Manager/
 │
 ├── main.py
 ├── statement.md
-└── README.md
-
-## Testing
-
-The project includes basic automated tests using Python's built-in `unittest` framework.
-
-### Run the Automated Tests
-
-Open the terminal in the project folder and run:
-
-```bash
-python3 -m unittest discover -s tests -v
+├── README.md
+│
+├── modules/
+│   ├── task.py
+│   ├── storage.py
+│   ├── validation.py
+│   ├── reports.py
+│   └── menu.py
+│
+└── tests/
+    └── test_task_manager.py
